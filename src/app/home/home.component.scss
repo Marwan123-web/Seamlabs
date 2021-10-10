@@ -106,8 +106,10 @@ $color12:#F0F4F9;
   
   @media all and (max-width: 768px) {
     .container-clock li span {
-        display: block;
         font-size: 1.5rem;
+    }
+    .timer-div{
+      width: 100% !important;
     }
     .container-clock h1 {
       font-size: calc(10px * var(--smaller));

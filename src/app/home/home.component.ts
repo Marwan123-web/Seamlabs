@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit {
     ]
   }
   timer() {
-    var countDownDate = new Date('Oct 12, 2021 00:00:00').getTime();
+    var countDownDate = new Date('Oct 30, 2021 00:00:00').getTime();
     setInterval(() =>{
       var now = new Date().getTime();
       var timeleft = countDownDate - now;

@@ -19,8 +19,9 @@
         <div class="col-12 col-md">
           <div class="row ">
             <div class="col-12 col-md">
-              <h5 class="text-muted">Community</h5>
-              <ul class="list-unstyled text-small">
+              <h5 class="text-muted" *ngIf="display">Community</h5>
+              <h5 class="text-muted dropdown-toggle" (click)="displayCommunity()" *ngIf="!display">Community</h5>     
+              <ul class="list-unstyled text-small" *ngIf="community">
                 <li><a class="text-muted" href="#">Learners</a></li>
                 <li><a class="text-muted" href="#">Partener</a></li>
                 <li><a class="text-muted" href="#">developers</a></li>
@@ -32,8 +33,9 @@
               </ul>
             </div>
             <div class="col-12 col-md">
-              <h5 class="text-muted">Informations</h5>
-              <ul class="list-unstyled text-small">
+              <h5 class="text-muted" *ngIf="display">Informations</h5>
+              <h5 class="text-muted dropdown-toggle" (click)="displayInformations()" *ngIf="!display">Informations</h5>    
+              <ul class="list-unstyled text-small" *ngIf="Informations">
                 <li><a class="text-muted" href="#">About</a></li>
                 <li><a class="text-muted" href="#">Pricing</a></li>
                 <li><a class="text-muted" href="#">Blog</a></li>
@@ -42,8 +44,9 @@
               </ul>
             </div>
             <div class="col-12 col-md">
-              <h5 class="text-muted">More</h5>
-              <ul class="list-unstyled text-small">
+              <h5 class="text-muted" *ngIf="display">More</h5>
+              <h5 class="text-muted dropdown-toggle" (click)="displayMore()" *ngIf="!display">More</h5>  
+              <ul class="list-unstyled text-small" *ngIf="More">
                 <li><a class="text-muted" href="#">Press</a></li>
                 <li><a class="text-muted" href="#">Investors</a></li>
                 <li><a class="text-muted" href="#">Terms</a></li>

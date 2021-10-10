@@ -1,0 +1,28 @@
+$color1:#FDC800;
+$color2:#002147;
+$color3:#BDBDBD;
+$color4:#00B2B2;
+$color5:#FF0E11;
+$color6:#6295A6;
+$color7:#FFD2E1;
+$color8:#FDFDFD;
+$color9:#FFBE00;
+$color10:#FFFFFF;
+$color11:#000000;
+$color12:#F0F4F9;
+
+
+.text-muted{
+    color: $color8 !important;
+}
+ul li{
+    font-size: 12px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+.nav li a i{
+    color: $color2 !important;
+}
+.nav li a i:hover{
+    color: $color4 !important;
+}

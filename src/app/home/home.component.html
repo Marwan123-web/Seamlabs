@@ -1,0 +1,111 @@
+<!-- Cards Start-->
+<div class="container70 py-5">
+
+  <section class="container">
+    <div>
+      <h1 class="text-center my-3">Top Featured Courses</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let card of cards">
+        <div class="card">
+          <div class="two-images">
+            <img src="{{card.image1}}" class="card-img-top" alt="...">
+            <div class="small-image">
+              <img src="{{card.image2}}">
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{card.title}}</h5>
+            <p class="card-text">{{card.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Cards End-->
+
+<!-- Section two Start-->
+<div class="container70 py-5">
+  <div class="card mb-12 border-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 two-images">
+        <img src="assets/images/image4.jpg" class="img-fluid rounded w-100" alt="...">
+        <div class="small-image-2">
+          <img src="assets/images/image6.jpg" class="rounded">
+        </div>
+        <div class="border-on-image">
+          <h5 class="card-title">Kimmie Vo</h5>
+          <p class="card-text">Junior Designer</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title text-2">Successful Student</h5>
+          <h5 class="card-title text-2 orange-text">Feedback</h5>
+          <p class="card-title">take course from the world's best instructors and universities, couses include record
+            auto-graded and peer-reviewed assignments, video lecutres and community discussion forums, when you complete
+            a course you will be eligable to recieve a shared electronic course certificate for a small fee</p>
+          <h5 class="card-title color2 py-3">The Courses that Kimmie has taken</h5>
+          <div class="border gray-background py-3 text-with-icon">
+            <h5 class="card-title color2">Modern and Contemporary Art and Design</h5>
+            <p class="card-text">The Museum of Modern Art</p>
+            <div class="small-image3">
+              <img src="assets/images/image7.jpg" class="rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section Two End-->
+
+<!-- Section Three Start-->
+<div class="gray-background">
+  <div class="container70 py-5">
+    <div class="image-on-gray">
+      <div class="card-group ">
+        <div class="card border-0" *ngFor="let info of information">
+          <img class="card-img-top" src="{{info.image}}" alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title number-style">{{info.number}}</h5>
+            <p class="card-text cyan-text">{{info.title | uppercase}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Section Three End-->
+
+<!-- Section Four Start-->
+
+<div class="container70 py-5">
+  <div class="card mb-12 border-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 two-images">
+        <img src="assets/images/test2.png" class="img-fluid rounded w-100" alt="...">
+      </div>
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title orange-text">Subscripe now</h5>
+          <h5 class="card-title text-2">Get Every Single Update You Will Get</h5>
+          <div class="border rounded d-flex justify-content-between flex-wrap px-1 py-1">
+            <div class="input">
+              <i class="fa fa-envelope pe-2"></i>
+              <input type="text" class="border-0" placeholder="Enter Email Address">
+            </div>
+            <div class="button">
+              <button class="btn btn-warning">Subscripe Now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Section Four End-->

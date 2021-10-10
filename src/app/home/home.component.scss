@@ -48,3 +48,80 @@ $color12:#F0F4F9;
     background-size: 70%;
     background-position: center;
 }
+
+
+.timer-div{
+    margin-top: -75px;
+    height: auto;
+    padding: 20px
+  }
+  .small-image{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 25%);
+  }
+  
+  .first-color{
+    color: $color8;
+    font-family: fantasy;
+    font-size: 30px;
+  }
+  .second-color{
+    color: $color1;
+  }
+  /* Clock style */
+  :root {
+    --smaller: .75;
+  }
+  
+  
+  .container-clock {
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container-clock h1 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+  }
+  
+  .container-clock li {
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    padding: .5em;
+    text-transform: uppercase;
+  }
+  
+  .container-clock li span {
+    display: block;
+    font-size: 2.5rem;
+  }
+  .container-clock li{
+    color: $color8;
+  }
+  
+  @media all and (max-width: 768px) {
+    .container-clock li span {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .container-clock h1 {
+      font-size: calc(10px * var(--smaller));
+    }
+    
+    .container-clock li {
+      font-size: calc(7px* var(--smaller));
+    }
+    
+    .container-clock li span {
+      font-size: calc(15px * var(--smaller));
+    }
+  }
+  .dots{
+    padding: 0 !important;
+    margin-top: 6% !important;
+  }

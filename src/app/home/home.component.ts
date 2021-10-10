@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   cards: Array<any> = [];
   information: Array<any> = [];
+  days:any;
+  hours:any;
+  minutes:any;
+  seconds:any;
   constructor() { }
 
   ngOnInit(): void {
+    this.timer();
     this.cards = [
       { id: '1', title: "User Research for User Experience Design", text: "The Museum of Modern Art", image1: "assets/images/image7.jpg", image2: "assets/images/image6.jpg" },
       { id: '2', title: "User Research for User Experience Design", text: "The Museum of Modern Art", image1: "assets/images/image6.jpg", image2: "assets/images/image7.jpg" },
@@ -26,6 +31,21 @@ export class HomeComponent implements OnInit {
       { id: '4', number: "32", title: "Awards Achieved", image: "assets/images/test2.png" },
 
     ]
+  }
+  timer() {
+    var countDownDate = new Date('Oct 12, 2021 00:00:00').getTime();
+    setInterval(() =>{
+      var now = new Date().getTime();
+      var timeleft = countDownDate - now;
+
+      this.days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+      this.hours = Math.floor(
+        (timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      this.minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+      this.seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+      console.log(this.days +" "+ this.hours +" "+ this.minutes +" "+ this.seconds);
+    }, 1000);
   }
 
 }

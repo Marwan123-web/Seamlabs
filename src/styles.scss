@@ -22,7 +22,13 @@ $color9:#FFBE00;
 $color10:#FFFFFF;
 $color11:#000000;
 $color12:#F0F4F9;
-
+*:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+    border: 0;
+}
 .background1{
     background-color: $color1;
 }
